@@ -1,0 +1,19 @@
+{
+  "name": "hoodchecker-api",
+  "version": "1.0.0",
+  "description": "REST API that queries the @hoodchecker_bot Telegram bot for contract-address safety scans and returns structured JSON.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "login": "node src/login.js",
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "telegram": "^2.22.2",
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "input": "^1.0.1"
+  }
+}
